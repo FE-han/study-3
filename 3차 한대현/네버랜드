@@ -1,0 +1,47 @@
+## 네버랜드
+
+### 문제 설명
+
+- 놀이기구의 대기시간을 빠른순서로 정렬하세요. 단 인덱스 2의 해당하는 값을 맨앞으로 출력하세요.
+
+### 자료 구조
+
+- **queue**
+    - 타입 : 리스트
+    - 저장 데이터 : 놀이기구 대기시간
+- **queue_choice**
+    - 타입 : 리스트
+    - 저장 데이터 : 놀이기구 대기시간 중 인덱스 2의 값
+
+### 풀이 과정
+
+```txt
+1. 함수 생성 후, queue_choice에 queue의 인덱스 2값을 저장하고 기존 queue의 값을 삭제한다.
+
+2. queue를 오름차순으로 정렬 후, queue_choice값을 삽입한다.
+
+
+```
+
+### 코드 구현
+- 사용 언어 : 파이썬
+
+```python
+
+# 풀이 과정 1
+def neverland(queue):
+    queue_choice = queue[2]
+    del queue[2]
+
+# 풀이 과정 2
+    queue.sort()
+    queue.insert(0,queue_choice)
+    
+    return queue
+
+queue = [30, 10, 20, 50, 40, 60]
+print(neverland(queue))
+
+```
+
+- 점수 : 100점 / 100점
