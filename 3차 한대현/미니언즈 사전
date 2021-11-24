@@ -1,0 +1,42 @@
+## 미니언즈 사전
+
+### 문제 설명
+
+- 미니언즈의 언어를 한국어로 번역해주는 사전을 만드세요.
+
+### 자료 구조
+
+- **miniword**
+    - 타입 : 변수
+    - 저장 데이터 : 사전형
+
+### 풀이 과정
+
+```txt
+1. cvs와 대응되는 한국어로 된 사전형 변수를 생성한다.
+
+2. 순서대로 출력한다.
+
+```
+
+### 코드 구현
+- 사용 언어 : 파이썬
+
+```python
+
+# 풀이 과정 1
+cvs = ["Bello", "Bello", "Tulaliloo_ti_amo", "Tank_yu", "Poopaye", "Poopaye"]
+
+miniWord = {"Bello":"안녕","Tulaliloo_ti_amo":"우린 너를 사랑해","Tank_yu":"고마워","Poopaye":"잘가"}
+
+# 풀이 과정 2
+print(miniWord["Bello"])
+print(miniWord["Bello"])
+print(miniWord["Tulaliloo_ti_amo"])
+print(miniWord["Tank_yu"])
+print(miniWord["Poopaye"])
+print(miniWord["Poopaye"])
+
+```
+
+- 점수 : 100점 / 100점
